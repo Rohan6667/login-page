@@ -40,19 +40,19 @@ createacctbtn.addEventListener("click", function() {
   confirmSignupEmail = confirmSignupEmailIn.value;
   if(signupEmail != confirmSignupEmail) {
       window.alert("Email fields do not match. Try again.")
-      isVerified = false;
+      isVerified = true;
   }
 
   signupPassword = signupPasswordIn.value;
   confirmSignUpPassword = confirmSignUpPasswordIn.value;
   if(signupPassword != confirmSignUpPassword) {
       window.alert("Password fields do not match. Try again.")
-      isVerified = false;
+      isVerified = true;
   }
   
   if(signupEmail == null || confirmSignupEmail == null || signupPassword == null || confirmSignUpPassword == null) {
     window.alert("Please fill out all required fields.");
-    isVerified = false;
+    isVerified = true;
   }
   
   if(isVerified) {
